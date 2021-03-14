@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facchu 2020</title>    
+    <link rel="stylesheet" href="style.css">
+    <style>   
+        body {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }     
+        div#img {
+            background-color: green;
+            width: 1024px;
+            height: 152px;
+            color: white;
+            font-size: 1.5em;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            line-height: 152px;
+            border-radius: 10px;
+        }    
+        cite {
+            color: red;
+        }
+        p {
+            color:peru;
+        }
+    </style>
+</head>
+<body>
+    <h1>Facchu 2020</h1>    
+    <div id="img"><img style="border-radius: 10px;" src="imagens/cabecalho_site.png" alt="Ícone Facchu / Data do evento"></div>
+    <script>
+        var img = window.document.querySelector('div#img')         
+        img.addEventListener('mouseenter', entrar)
+        img.addEventListener('mouseout', sair)         
+
+        function entrar() {                      
+            img.innerHTML = 'Fonte: <cite>http://brusque.ifc.edu.br/facchu-2020/</cite>'                     
+        }
+        function sair() {
+            img.innerHTML = '<img src="imagens/cabecalho_site.png" alt="Ícone Facchu / Data do evento">'                       
+        } 
+
+        
+    </script>
+    <h2>O que é Semana FACCHU?</h2>
+    <blockquote cite="http://brusque.ifc.edu.br/facchu-2020/">
+        Semana integrada de ensino, pesquisa e extensão do Instituto Federal Catarinense – Campus Brusque de maneira conjunta às outras instituições de ensino do município e região, evento de caráter integrador e não competitivo, proporcionando aos participantes experimentações e vivências culturais e acadêmicas diversas.
+    </blockquote>
+    <h2>Objetivos:</h2>
+    <blockquote cite="http://brusque.ifc.edu.br/facchu-2020/">
+        <ul>
+            <li>Fortalecer a articulação entre teoria e prática e a integração curricular entre ensino, pesquisa e extensão.</li>
+            <li>Divulgar à comunidade os trabalhos de ensino, pesquisa e extensão desenvolvidos pelo IFC – Campus Brusque</li>
+            <li>Promover a formação acadêmica, técnico científica por meio de palestras e apresentações de trabalhos de pesquisa, ensino e extensão.</li>
+        </ul>
+    </blockquote>
+    <hr>
+    <p>Para acessar a programação do evento: <a href="pagina1.html" target="_self" rel="next" hreflang="pt-br">clique aqui</a>.</p>
+    <p>Para se inscrever no evento:<a href="pagina2.html" target="_self" rel="next" hreflang="pt-br">clique aqui</a>.</p>
+    <p>Para acessar apresentações, palestras ou minicursos sobre o evento: <a href="pagina3.html" target="_self" rel="next" hreflang="pt-br">clique aqui</a>.</p>
+</body>
+</html>

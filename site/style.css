@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+body {    
+    background-color: mediumturquoise;
+    
+}
+h1, h2 , h3{
+    color: darkslategray;
+}
