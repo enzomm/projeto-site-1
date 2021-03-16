@@ -32,19 +32,16 @@
 <body>
     <h1>Facchu 2020</h1>    
     <div id="img"><img style="border-radius: 10px;" src="imagens/cabecalho_site.png" alt="Ícone Facchu / Data do evento"></div>
-    <script>
+    <script>        
         var img = window.document.querySelector('div#img')         
         img.addEventListener('mouseenter', entrar)
-        img.addEventListener('mouseout', sair)         
-
+        img.addEventListener('mouseout', sair)       
         function entrar() {                      
             img.innerHTML = 'Fonte: <cite>http://brusque.ifc.edu.br/facchu-2020/</cite>'                     
         }
         function sair() {
             img.innerHTML = '<img src="imagens/cabecalho_site.png" alt="Ícone Facchu / Data do evento">'                       
-        } 
-
-        
+        }         
     </script>
     <h2>O que é Semana FACCHU?</h2>
     <blockquote cite="http://brusque.ifc.edu.br/facchu-2020/">
